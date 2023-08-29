@@ -91,8 +91,6 @@ class Lineup(APIRequest):
         id_channel: int = Query(1),
         # user: nebula.User = Depends(current_user),
     ):
-        """Get a list of assignments for the current user"""
-
         response.headers["Access-Control-Allow-Origin"] = "*"
         response.headers["Access-Control-Allow-Methods"] = "*"
 
